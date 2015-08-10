@@ -25,6 +25,10 @@ Then open your browser and go to
 ```
 http://127.0.0.1/9000
 ```
+To view the tree of a given family:
+```
+http://127.0.0.1/9000/<ID>
+```
 
 Contact
 -------
