@@ -1,0 +1,16 @@
+!!! 5
+html
+    head
+        title #{title}
+        link(rel="stylesheet" href="http://emepyc.github.io/tnt/v0/tnt.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js")
+        script(src="/build/cafe-vis.js")
+
+    body
+        h3 CAFE result for gene #{geneFamilyName}
+        p! This family has a <strong>pvalue</strong> of #{familyPvalue}
+        div#mytree
+        script
+            |!
+                var cafe_vis = cafe_tree();
+                cafe_vis("./src/#{tree}", document.getElementById("mytree"));
